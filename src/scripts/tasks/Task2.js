@@ -18,20 +18,18 @@ Task2.prototype.run=function(){
     var previousResult = 1,
         currentResult = 2,
         maxFibonacci = 4000000,
-        nextResult = 3,
-        sum = currentResult;
+        sum = 0;
 
-    while(true) {
-        nextResult = currentResult + previousResult;
-        if(nextResult>maxFibonacci){
-            break;
+    while(currentResult<maxFibonacci) {
+        if(currentResult%2==0){
+            sum+=currentResult;
         }
 
+        var result = currentResult + previousResult;
         previousResult = currentResult;
-        currentResult = nextResult;
-        if(nextResult%2==0){
-            sum+=nextResult;
-        }
+        currentResult = result;
     }
+
+    // 4613732
     return sum;
 };

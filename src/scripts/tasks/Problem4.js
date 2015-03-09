@@ -28,7 +28,7 @@ Problem4.prototype.isPalindrome = function(number, upperLimit){
     var leftNumber,
         rightNumber;
     while(true){
-        leftNumber = number 
+        leftNumber = number
         if(leftNumber!=rightNumber){
             return false;
         }
